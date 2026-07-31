@@ -1,8 +1,31 @@
 aid: moviepass
 name: Moviepass
-description: Moviepass is a company surfaced as a portfolio company of canaan-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  MoviePass is a consumer movie-theater subscription service that lets members
+  see films in theaters nationwide for a low monthly fee. The relaunched service
+  (led by co-founder Stacy Spikes after reacquiring the brand) uses a
+  credit-based system: members choose a monthly plan, earn credits, and redeem
+  them for showtimes at over 4,000 participating US theaters, including major
+  chains and independent cinemas, with plans starting around $10/month and no
+  long-term commitment. Members browse showtimes and book through the MoviePass
+  iOS and Android apps. MoviePass was surfaced in the API Evangelist network as a
+  portfolio company of Canaan Partners; it is a direct-to-consumer app business
+  and does not publish a traditional public developer API. Its marketing site is
+  Wix-powered and exposes a hosted Wix Site MCP server plus an llms.txt for
+  agentic access to public site content.
 url: https://raw.githubusercontent.com/api-evangelist/moviepass/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.wixstatic.com/media/f5d875_a9c258a5531b44a58f56443581eb7a9b~mv2.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +34,42 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Movies
+- Entertainment
+- Subscription
+- Consumer
+- Streaming and Media
+- Ticketing
 apis: []
+common:
+- type: Website
+  url: https://www.moviepass.com
+- type: SignUp
+  url: https://app.moviepass.com/register/basic
+- type: Pricing
+  url: https://www.moviepass.com/plans
+- type: Support
+  url: https://www.moviepass.com/faq
+- type: TermsOfService
+  url: https://www.moviepass.com/terms
+- type: PrivacyPolicy
+  url: https://www.moviepass.com/privacy
+- type: MCPServer
+  url: mcp/moviepass-mcp.yml
+- type: LLMsTxt
+  url: llms/moviepass-llms.txt
+- type: DomainSecurity
+  url: security/moviepass-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
